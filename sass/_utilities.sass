@@ -1,0 +1,23 @@
+//Mixins
+
+@mixin reset
+  *
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Source Sans Pro', sans-serif
+
+
+//Mobile
+
+@mixin responsive-xl
+  @media (max-width: 1500px)
+    @content
+
+@mixin responsive-m
+  @media (max-width: 1200px)
+    @content
+
+@mixin responsive-sm
+  @media (max-width: 800px)
+    @content

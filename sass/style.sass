@@ -1,0 +1,153 @@
+@import  'utilities'
+
+@include reset
+
+
+  
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  padding: 100px 0
+  background: #E6EFF6
+  font-family: 'Source Sans Pro', sans-serif
+
+  @include responsive-sm
+    height: 100%
+
+.container
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 50%
+
+  @include responsive-xl
+    width: 70%
+
+  @include responsive-m
+    width: 90%
+    height: 90%
+
+  .flex-elementos
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+
+    @include responsive-sm
+      flex-direction: column
+
+  .elem
+    height: 300px
+    padding: 50px 10px 50px 50px
+
+    @include responsive-sm
+      height: 280px
+      padding: 50px 10px 20px 20px
+
+
+
+  .primary
+    width: 100%
+    height: 100%
+    background: white
+    border-top-right-radius: 10px
+    border-top-left-radius: 10px
+
+    h2
+      color: #2CB3AE
+      font-size: 1.8rem
+      margin-bottom: 1.1rem
+
+    p b
+      color: #bad828
+      font-size: 1.5rem
+      
+
+    .p-primary
+      margin-top: 10px
+      color: #bbb
+      font-size: 1.2rem
+      letter-spacing: 1px
+      line-height: 28px
+
+
+  .secondary
+    width: 50%
+    background-color: #2CB3AE
+    border-bottom-left-radius: 10px
+
+    @include responsive-sm
+      width: 100%
+      border-bottom-left-radius: 0px
+
+    h3
+      color: white
+      font-size: 1.5rem
+      margin-bottom: 0.9rem
+
+    .price
+      display: flex
+      align-items: center
+      margin-bottom: 0.5rem
+
+      h4
+        color: white
+        font-size: 2.5rem
+
+
+      p
+        margin-left: 15px
+        font-size: 1.2rem
+        color: #ffffffb0
+        margin-bottom: 0px
+
+    p
+      color: white
+      font-size: 1.2rem
+      font-weight: 400
+      letter-spacing: 1px
+      margin-bottom: 2.5rem
+    
+    .btn
+      text-decoration: none
+      text-align: center
+      padding: 15px 35%
+      background-color: #bad828
+      border-radius: 5px
+      color: white
+      font-size: 1.2rem
+      font-weight: bold
+      display: inline-block
+      margin: 0 auto
+
+      transition: 0.5s
+
+      &:hover
+        background: #a5c218
+
+      
+
+  .third
+    width: 50%
+    background-color: #4BBDBC
+    border-bottom-right-radius: 10px
+
+    @include responsive-sm
+      width: 100%
+      border-bottom-left-radius: 10px
+
+    h3
+      color: white
+      font-size: 1.5rem
+      margin-bottom: 10px
+
+    p
+      color: white
+      font-size: 1.1rem
+      font-weight: 400
+      color: #ffffffcc
+
+
+
